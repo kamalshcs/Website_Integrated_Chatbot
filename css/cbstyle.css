@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Open+Sans&display=swap');
+
+  
+  
+  #bodybox {
+    margin: auto;
+    max-width: 300px;
+    background-color:#282828;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    display: none;
+    position: fixed;
+    bottom: 4%;
+    right: 15px;
+    z-index: 9;
+  }
+
+  
+  
+    
+ 
+
+  .chatlog {
+     font: 15px 'Poppins', sans-serif;
+  }
+  
+  #chatbox {
+    font: 17px 'Poppins', sans-serif;
+    height: 22px;
+    width: 100%;
+    padding:5px;
+  }
+  
+  a{
+    color:white;
+    font-weight: 500;
+  }
+

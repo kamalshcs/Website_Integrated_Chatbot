@@ -1,0 +1,107 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap'); 
+  
+ 
+ .midbody1{
+   margin: auto;
+   margin-top: 4%;
+   font-family: 'Cedarville Cursive', cursive; 
+   padding:2% 1%;
+  
+  border-radius: 3px;
+  color: black;
+  text-align: center;
+  width:70%;
+ }
+
+
+  .panels {
+    display: flex;
+    height: 350px;
+    overflow: hidden;
+    margin:0% 5%;
+   padding: 3% 0;
+  }
+  
+  @media (max-width: 480px) {
+    .panels {
+      flex-direction: column;
+    }
+  }
+  
+  .panel {
+    font-family: 'Poppins', sans-serif;
+    margin-left:2%;
+    margin-right: 2%;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.50) 0px 25px 30px -12px;
+    color: white;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+    max-width: 100vw;
+    text-align: center;
+      transition: font-size 0.5s cubic-bezier(.2, -.2, .2, -.2), flex 0.5s cubic-bezier(.2, -.2, .2, -.2), 0.2s;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  
+  .panel:nth-child(1) {
+    background-image: url(https://source.unsplash.com/1600x1300/?nature,photography);
+  }
+  
+  .panel:nth-child(2) {
+    background-image:  url(https://source.unsplash.com/1600x1300/?greenry,photography);
+}
+  
+  .panel:nth-child(3) {
+    background-image:  url(https://source.unsplash.com/1600x1300/?nature);
+}
+  
+
+
+  .panel > p {
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    margin: 0;
+    transition: transform 0.5s;
+    width: 100%;
+  }
+  
+  .panel p:first-child {
+    transform: translateY(-100%);
+  }
+  
+  .panel.open-active p:first-child {
+    transform: translateY(0);
+  }
+  
+  .panel p:nth-of-type(2) {
+    font-size: 20px;
+    text-transform: none;
+  }
+  
+  .panel p:last-of-type {
+    transform: translateY(100%);
+  }
+  
+  .panel.open-active p:last-of-type {
+    transform: translateY(0);
+  }
+  
+  .panel.open {
+    
+    flex:2;
+    font-weight: 900;
+  }
+  
+ 

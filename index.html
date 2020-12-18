@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cbstyle.css">
+    <script src="cb.js"></script>
+    <title>Document</title>
+
+    <style>
+
+        html{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('image/index.jpg');
+            height: 100%;
+            background-attachment: fixed;
+        }
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+  
+    
+
+    <div id='bodybox'>
+      
+      <div style="background-color: #af8d86;width:300px;border-top-left-radius: 5px;border-top-right-radius: 5px;
+      height:50px;margin:0;padding:0;display: flex;justify-content: center;">
+        
+        <img src="image/chat.png" style="height: 40px; padding:1%;"> 
+
+        <h1 style="margin: 0%;font-weight: 100;color:white;
+        text-align: center;font-display: center; font-family: 'Poppins', sans-serif;
+        padding:4% 0;font-size: 20px;">Chatbot</h1>
+
+<img src="image/cross.png" onclick="closeForm()" style="height: 30px; padding:3% 1% 0 25%;margin-left:5%">
+
+
+
+     </div>
+
+        <div id='chatborder' style="padding-bottom: 10px;padding-right: 25px;padding-left: 25px;">
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog7" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog6" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog5" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog4" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog3" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog2" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog1" class="chatlog">&nbsp;</p>
+          <input style="padding:2%; width:235px" type="text" name="chat" id="chatbox" placeholder="Hey! Type here to talk." onfocus="placeHolder()">
+        </div>
+</div>
+<img src="image/chaticon1.png" onclick="openForm()" style="position: fixed;
+bottom: 5%;cursor: pointer;right: 3%;height:70px; width:70px">
+    
+
+
+    
+   <nav id="main" class="top">
+        <div class="dropdownBackground">
+            <span class="arrow"></span>
+        </div>
+        <ul class="cool">
+            <li>
+                <img src="image/blog.png" style="margin:0 2%">
+                <a href="#" style="font-size:23px;">BLOG</a>
+            </li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About Me</a>
+            </li>
+            <li>
+                <a href="read.html">Read</a>
+                
+            </li>
+            <li>
+                <a href="gallery.html">Photography</a>
+                
+            </li>
+        </ul>
+    
+    </nav>
+
+    
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    <div class="article" style="scroll-behavior: inherit;">
+        <h2>Viva la Vida!</h2>
+        <p>I write stories, with their myriad trials, tribulations, 
+            and adventures. An insatiable wanderlust from an early age, 
+            I like to see as much of the world as possible.
+            Music is the ultimate personification of my spirit.
+        </p>
+
+           <button>
+            <img src="image/book.png" style="height:30px;margin-right:5%;">
+                <a href="read.html" style="color:white;font-size:20px;margin-top: 2%;">
+                Read
+                </a>
+                
+            </button>
+    </div>
+
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+
+
+    <!-- dropdowncode -->
+
+<!-- <script>
+    const nav= document.querySelector('.top');
+    const triggers= document.querySelectorAll('.cool > li');
+    const background= document.querySelector('.dropdownBackground');
+    
+
+    function handleEnter()
+    {
+        this.classList.add('trigger-enter');
+        setTimeout(() => {
+            if(this.classList.contains('trigger-enter'))
+            {
+                this.classList.add('trigger-enter-active')
+            }
+        },150);
+        background.classList.add('open');
+
+        const dropdown= this.querySelector('.dropdown');
+        const dropdownCoords= dropdown.getBoundingClientRect();
+        const navCoords= nav.getBoundingClientRect(); 
+
+        const coords={
+            height:dropdownCoords.height,
+            width:dropdownCoords.width,
+            top:dropdownCoords.top - navCoords.top,
+            left:dropdownCoords.left - navCoords.left
+        };
+
+        background.style.setProperty('width', `${coords.width}px`);
+        background.style.setProperty('height', `${coords.height}px`);
+        background.style.setProperty('transform', `translate(${coords.left}px, ${coords.top}px)`);
+    }
+
+
+    function handleLeave()
+    {
+        this.classList.remove('trigger-enter', 'trigger-enter-active');
+        background.classList.remove('open');
+    }
+
+    triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
+    triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
+
+
+
+
+</script> -->
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/cbstyle.css">
+    <script src="cb.js"></script>
+
+</head>
+<body>
+
+
+  
+    
+
+    <div id='bodybox'>
+      
+      <div style="background-color: #af8d86;width:300px;border-top-left-radius: 5px;border-top-right-radius: 5px;
+      height:50px;margin:0;padding:0;display: flex;justify-content: center;">
+        
+        <img src="image/chat.png" style="height: 40px; padding:1%;"> 
+
+        <h1 style="margin: 0%;font-weight: 100;color:white;
+        text-align: center;font-display: center; font-family: 'Poppins', sans-serif;
+        padding:4% 0;font-size: 20px;">Chatbot</h1>
+
+<img src="image/cross.png" onclick="closeForm()" style="height: 30px; padding:3% 1% 0 25%;margin-left:5%">
+
+
+
+     </div>
+
+        <div id='chatborder' style="padding-bottom: 10px;padding-right: 25px;padding-left: 25px;">
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog7" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog6" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog5" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog4" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog3" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog2" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog1" class="chatlog">&nbsp;</p>
+          <input style="padding:2%; width:235px" type="text" name="chat" id="chatbox" placeholder="Hey! Type here to talk." onfocus="placeHolder()">
+        </div>
+</div>
+<img src="image/chaticon.png" onclick="openForm()" style="position: fixed;
+bottom: 10%;cursor: pointer;right: 5%;">
+    
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/cbstyle.css">
+    <script src="cb.js"></script>
+    
+    <style>
+
+
+    
+    html{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('image/grey.jpg');
+            background-attachment: fixed;
+           
+        }
+        
+        
+        body {
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('image/grey.jpg');
+          margin:0%;
+          background-attachment: fixed;
+
+        }
+
+        a:hover {
+  color:white;
+  text-decoration: none;
+}
+
+        
+        
+        
+        .row {
+            background-color:rgba(0, 0, 0, 0.5);
+          display: flex;
+          flex-wrap: wrap;
+          margin:6% 4% 4% 4%;
+          padding: 4px 10px 4px 4px;
+          box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.7);
+        }
+        
+        /* Create four equal columns that sits next to each other */
+        .column {
+          flex: 25%;
+          max-width: 25%;
+          padding: 4px 4px;
+        }
+        
+        .column img {
+          margin: 4px;
+          vertical-align: middle;
+        }
+        
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media (max-width: 500px) {
+          .column {
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+        
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media (max-width: 500px) {
+          .column {
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+
+       
+
+    </style>
+
+
+</head>
+<body>
+
+
+
+  <body>
+
+
+  
+    
+
+    <div id='bodybox'>
+      
+      <div style="background-color: #af8d86;width:300px;border-top-left-radius: 5px;border-top-right-radius: 5px;
+      height:50px;margin:0;padding:0;display: flex;justify-content: center;">
+        
+        <img src="image/chat.png" style="height: 40px; padding:1%;"> 
+
+        <h1 style="margin: 0%;font-weight: 100;color:white;
+        text-align: center;font-display: center; font-family: 'Poppins', sans-serif;
+        padding:4% 0;font-size: 20px;">Chatbot</h1>
+
+<img src="image/cross.png" onclick="closeForm()" style="height: 30px; padding:3% 1% 0 25%;margin-left:5%">
+
+
+
+     </div>
+
+        <div id='chatborder' style="padding-bottom: 10px;padding-right: 25px;padding-left: 25px;">
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog7" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog6" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog5" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog4" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog3" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog2" class="chatlog">&nbsp;</p>
+          <p style="color:white; font-family: 'Poppins', sans-serif;" id="chatlog1" class="chatlog">&nbsp;</p>
+          <input style="padding:2%; width:235px" type="text" name="chat" id="chatbox" placeholder="Hey! Type here to talk." onfocus="placeHolder()">
+        </div>
+</div>
+<img src="image/chaticon1.png" onclick="openForm()" style="position: fixed;
+bottom: 5%;cursor: pointer;right: 3%;height:70px; width:70px">
+    
+</body>
+
+
+    
+   <nav id="main" class="top">
+        <div class="dropdownBackground">
+            <span class="arrow"></span>
+        </div>
+        <ul class="cool">
+            <li>
+                <img src="image/blog.png" style="margin:0 2%">
+                <a href="#" style="font-size:23px;">BLOG</a>
+            </li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About Me</a>
+            </li>
+            <li>
+                <a href="read.html">Read</a>
+                
+            </li>
+            <li>
+                <a href="gallery.html">Photography</a>
+                 
+            </li>
+        </ul>
+    
+    </nav>
+
+<
+    
+    
+    
+    
+    <p style="font-family: 'Cedarville Cursive', cursive; text-align: center;font-size: 35px; padding-top:8%">Photography</p>
+    
+    <!-- Photo Grid -->
+    <div class="row"> 
+    
+    <div class="column">
+    <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x2000/?nature,water" onclick="show_details(this);" style="width:100%" data-box="1">
+    <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x900/?nature,flower" onclick="show_details(this);" style="width:100%" data-box="8">
+    <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x1800/?nature,bird" onclick="show_details(this);" style="width:100%" data-box="2">
+    <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x1400/?nature,flowers" onclick="show_details(this);" style="width:100%" data-box="8">
+    
+    </div>
+    
+    <div class="column">
+        <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x1800/?nature,birds" onclick="show_details(this);" style="width:100%" data-box="1">
+        <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x1500/?nature,music" onclick="show_details(this);" style="width:100%" data-box="8">
+        <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x900/?nature" onclick="show_details(this);" style="width:100%" data-box="2">
+        <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x1900/?nature,colors" onclick="show_details(this);" style="width:100%" data-box="8">
+        
+    </div> 
+    
+    <div class="column">
+        <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x900/?nature,mountains" onclick="show_details(this);" style="width:100%" data-box="1">
+        <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x1800/?nature,write" onclick="show_details(this);" style="width:100%" data-box="8">
+        <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x2400/?blog" onclick="show_details(this);" style="width:100%" data-box="2">
+        <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x1000/?plants" onclick="show_details(this);" style="width:100%" data-box="8">
+        
+    </div>
+    
+    <div class="column">
+        <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x900/?greenery" onclick="show_details(this);" style="width:100%" data-box="1">
+        <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x1200/?travel" onclick="show_details(this);" style="width:100%" data-box="8">
+        <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x1800/?photography" onclick="show_details(this);" style="width:100%" data-box="2">
+        <img data-toggle="modal" data-target="#myModal" src="https://source.unsplash.com/1600x2200/?food" onclick="show_details(this);" style="width:100%" data-box="8">
+        
+    </div>
+    
+    </div>
+    
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+           <img id="setImage" data-dismiss="modal" style="width:100%" >   
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    
+       
+            
+    
+    
+      
+    <script type="text/javascript">
+        function show_details(image_name){
+          var details = image_name.getAttribute("data-box");
+          var name = details;
+          console.log(name);
+          document.getElementById("setImage").src = details;
+        }
+      </script>
+      
+
+
+    
+</body>
+</html>
