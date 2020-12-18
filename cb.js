@@ -32,14 +32,14 @@
         }
       
       
-        if (lastUserMessage === 'show me photos' || lastUserMessage =='pictures' || lastUserMessage =='photos' || lastUserMessage =='take me to gallery' || lastUserMessage =='photography'){
+        if (lastUserMessage === 'show me photos' || lastUserMessage =='Pictures' || lastUserMessage =='photos' || lastUserMessage =='Photos' || lastUserMessage =='take me to gallery' || lastUserMessage =='photography'){
           var str="Photography";
           // var result = str.link("Photography.html");
-          var result = window.location.replace("gallery.html");
-          botMessage = "Taking you to  ' " +result+ " ' ";
+          botMessage = "Taking you to gallery";
+          setTimeout(window.location.replace("gallery.html"),2000);
         }
       
-        if (lastUserMessage === 'show me recent articles' || lastUserMessage =='articles' || lastUserMessage =='blog posts'|| lastUserMessage =='blog') {
+        if (lastUserMessage === 'show me recent articles' || lastUserMessage =='articles' || lastUserMessage =='blog posts' || lastUserMessage =='Blog posts' || lastUserMessage =='blog' || lastUserMessage =='Blog') {
           var str="Read";
           var result = str.link("read.html");
           // var result = window.location.replace("read.html");
@@ -47,7 +47,7 @@
           
         }
       
-        if (lastUserMessage === 'take me home' || lastUserMessage =='home page' || lastUserMessage =='home') {
+        if (lastUserMessage === 'take me home' || lastUserMessage =='home page' || lastUserMessage =='home' || lastUserMessage =='Home' || lastUserMessage =='Home page') {
           var str="Home";
           var result = str.link("index.html");
           // var result = window.location.replace("index.html");
